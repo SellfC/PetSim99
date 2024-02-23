@@ -1,4 +1,3 @@
-print("Made By firedevil (Ryan | 404678244215029762 | https://discord.gg/ettP4TjbAb)")
 
 repeat
     task.wait()
