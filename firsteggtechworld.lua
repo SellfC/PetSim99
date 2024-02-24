@@ -3,7 +3,20 @@ local character = game.Players.LocalPlayer.Character
 local humanoid = character:WaitForChild("Humanoid")
 local startPosition = Vector3.new(-9947.99121, 16.7841587, -382.955322)  -- Change to your desired start position
 local endPosition = Vector3.new(-10049.9707, 13.5068493, -314.173828)    -- Change to your desired end position
+-- antiafk
+game.Players.LocalPlayer.PlayerScripts.Scripts.Core["Idle Tracking"].Enabled = false 
 
+if getconnections then
+    for _, v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
+        v:Disable()
+    end
+else
+    game.Players.LocalPlayer.Idled:Connect(function()
+        game:GetService("VirtualUser"):Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+        task.wait(1)
+        game:GetService("VirtualUser"):Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    end)
+end
 -- Function to move the character to the destination
 local function moveCharacter()
     humanoid:MoveTo(endPosition)
