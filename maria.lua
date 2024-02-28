@@ -34,7 +34,7 @@ moveCharacter()
 
 task.wait(5)
 
-local hatchCountPerRequest = 53   -- how many you can hatch at once
+local hatchCountPerRequest = 55   -- how many you can hatch at once
 local totalRequestCount = 100000000000000    -- how many to hatch each egg
 
 
