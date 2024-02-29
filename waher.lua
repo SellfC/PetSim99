@@ -1,3 +1,5 @@
+print("weher")
+
 local vu = game:GetService("VirtualUser")
 local character = game.Players.LocalPlayer.Character
 local humanoid = character:WaitForChild("Humanoid")
