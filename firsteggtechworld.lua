@@ -36,7 +36,7 @@ moveCharacter()
 
 task.wait(5)
 
-local hatchCountPerRequest = 67   -- how many you can hatch at once
+local hatchCountPerRequest = 68   -- how many you can hatch at once
 local totalRequestCount = 100000000000000    -- how many to hatch each egg
 
 
@@ -44,7 +44,7 @@ local totalRequestCount = 100000000000000    -- how many to hatch each egg
 
 
 local eggsList = {
-    "Tech Ciruit Egg"
+    "Tech Flurry Egg"
 }
 
 local Eggs = game.Players.LocalPlayer.PlayerScripts.Scripts.Game['Egg Opening Frontend']getsenv(Eggs).PlayEggAnimation = function() return end
