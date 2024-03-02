@@ -36,24 +36,23 @@ moveCharacter()
 
 task.wait(5)
 
-local hatchCountPerRequest = 52  -- how many you can hatch at once
-local totalRequestCount = 100000000000000    -- how many to hatch each egg
+local ReplicatedStorage = game:GetService("ReplicatedStorage") :: ReplicatedStorage & {Library: ModuleScript; Network: ModuleScript & {Eggs_RequestPurchase: RemoteFunction}}
+local Players = game:GetService("Players")
+local Player = Players.LocalPlayer :: Player & {PlayerScripts: Folder & {Scripts: Folder & {Game: Folder & {["Egg Opening Frontend"]: LocalScript}}}}
+local Library: {Save: {Get: () -> {MaximumAvailableEgg: number; EggHatchCount: number;}}}  = require(ReplicatedStorage.Library)
+local EggsUtilMod: {GetIdByNumber: () -> number} = require(ReplicatedStorage.Library.Util.EggsUtil)
+local PlayerInfo = Library.Save.Get()
+local EggAnim : {PlayEggAnimation: () -> nil} = getsenv(Player.PlayerScripts.Scripts.Game["Egg Opening Frontend"])
 
+hookfunction(EggAnim.PlayEggAnimation, function()
+    return
+end)
 
+while task.wait(0.1) do
+    local BestEggName = EggsUtilMod.GetIdByNumber(113)
+    local EggHatchCount = PlayerInfo.EggHatchCount
 
-
-
-local eggsList = {
-    "Tech Ciruit Egg"
-}
-
-local Eggs = game.Players.LocalPlayer.PlayerScripts.Scripts.Game['Egg Opening Frontend']getsenv(Eggs).PlayEggAnimation = function() return end
-
-for i = 1, totalRequestCount do
-    for _, eggName in ipairs(eggsList) do
-        for j = 1, hatchCountPerRequest do
-            game:GetService("ReplicatedStorage").Network.Eggs_RequestPurchase:InvokeServer(eggName, hatchCountPerRequest)  -- Each request purchases 1 egg
-            wait(0.000000001) -- You might need to adjust the wait time based on the game's mechanics
-        end
-    end
+    repeat
+        local success: boolean = ReplicatedStorage.Network.Eggs_RequestPurchase:InvokeServer(BestEggName, EggHatchCount)
+    until success       
 end
