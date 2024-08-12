@@ -1,4 +1,2 @@
-script_key="GLeBXrqZXsWGTRGcQQJObwjpzdlsWpcY";
-pcall(function()
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6d2e511685838483bd0c2d3ad8efcb0c.lua"))()
-end)
+script_key="WrvaxdlcmJgDRVfEtyFTDkJVNVaTXMAC";
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/9217a7f5a73261867db220523aeafc88.lua"))()
