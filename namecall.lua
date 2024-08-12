@@ -1,6 +1,4 @@
---Config
-getgenv().speed = 100 -- can set 100 - 500 speed tween
-getgenv().privatecode = "NpfQh0PmSZ"
-getgenv().Webhook = ""
---Script
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c831bed22e229ea83e8a6c43f60db04a.lua"))()
+script_key="GLeBXrqZXsWGTRGcQQJObwjpzdlsWpcY";
+pcall(function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6d2e511685838483bd0c2d3ad8efcb0c.lua"))()
+end)
