@@ -34,7 +34,11 @@ getgenv().code = "Q1u9b5O3M0"
 elseif Player.Name == "notistavl" then
 getgenv().code = "HAY3bKUdQ6" 
 elseif Player.Name == "ploios6s" then
-getgenv().code = "a7cZoyGucM" 
+getgenv().code = "a7cZoyGucM"  
+elseif Player.Name == "ferianecwb" then
+getgenv().code = "DBl15XgrtF" 
+elseif Player.Name == "Cruttz2167" then
+getgenv().code = "lIxyvt3OzY"
 end
 getgenv().BuyMythicalChest = true
 getgenv().BuyLegendaryChest = true
