@@ -1,14 +1,9 @@
-local Player = game:GetService("Players").LocalPlayer
-if Player.Name == "enerolomamorarp" then
-    getgenv().rei = {
-        ["PrivateCode"] = "SQlY2VzjTi",
-    }
-end
 --Config
 getgenv().rei = {
     ["Key"] = "rei_a562f50d886966b7c72b574b", -- Put Ur Key
     ["Method"] = "Impel", 
-
+    
+    ["PrivateCode"] = "SQlY2VzjTi",
     ["Vote"] = "Normal", -- Normal / Hard
     ["Nightmare+"] = true, -- Auto Nightmare+
 
@@ -18,10 +13,10 @@ getgenv().rei = {
 
     ["Speed"] = 250,
     ["FPS"] = 30,
-    --["AutoLeave"] = true, -- if find someone in impel base then rejoin
+    ["AutoLeave"] = true, -- if find someone in impel base then rejoin
     --["Player List"] = {},
 
-    ["Haki"] = true, -- Require Haki 
+    ["Haki"] = false, -- Require Haki 
 
     ["AutoBuyDrink"] = true, -- Auto Buy Stamina Juice
     ["Drink"] = true, --  Stamina
