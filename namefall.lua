@@ -2,7 +2,7 @@ local Player = game:GetService("Players").LocalPlayer
 if Player.Name == "Steelstep1686" then
 getgenv().code = "SQlY2VzjTi"
 elseif Player.Name == "Ziplakk1772" then
-getgenv().code = "NpfQh0PmSZ" 
+getgenv().code = "ODmcKl4ZQl" 
 elseif Player.Name == "Frostwidget5298" then
 getgenv().code = "Q1u9b5O3M0" 
 elseif Player.Name == "skjaldakx" then
@@ -28,7 +28,7 @@ getgenv().code = "QdzU2NELxo"
 elseif Player.Name == "c2c1akdz" then
 getgenv().code = "SQlY2VzjTi" 
 elseif Player.Name == "enturavang" then
-getgenv().code = "NpfQh0PmSZ" 
+getgenv().code = "ODmcKl4ZQl" 
 elseif Player.Name == "enerolomamorarp" then
 getgenv().code = "Q1u9b5O3M0" 
 elseif Player.Name == "notistavl" then
