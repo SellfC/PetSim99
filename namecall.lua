@@ -9,11 +9,11 @@ getgenv().rei = {
 
     --["WalkMethod"] = "TP", -- TP [ Maybe Risk ] / Tween
     ["Smooth"] = true, -- Smooth Fps / remove effect.
-    --["Tp back"] = true, -- check Tp back
+    ["Tp back"] = true, -- check Tp back
 
-    ["Speed"] = 250,
+    ["Speed"] = 500,
     ["FPS"] = 30,
-    ["AutoLeave"] = true, -- if find someone in impel base then rejoin
+    --["AutoLeave"] = true, -- if find someone in impel base then rejoin
     --["Player List"] = {},
 
     ["Haki"] = false, -- Require Haki 
