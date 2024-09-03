@@ -48,21 +48,3 @@ getgenv().TweenSpeed = 60
 getgenv().WebHook = "https://discord.com/api/webhooks/1238039507555713025/A-lffGSDJadjG2Ruk5Ujw7cHjhtiJmmt9YpsJ1VlCVlgSnw57DvFPPCv3kjVGSBRhy5k"
 script_key="WrvaxdlcmJgDRVfEtyFTDkJVNVaTXMAC";
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/16ef3b8358c3871fed6457dc45dca67e.lua"))()
-task.wait(30)
-
-task.spawn(function()
-    local stuck = true
-    while stuck do task.wait()
-    pcall(function()
-        for i, v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.ImpelDownUI.Info.Timers:GetDescendants()) do
-            if v.Name == "Time" then
-                if v.Text == "10:20" or v.Text == "10:21" or  v.Text == "10:22" or  v.Text == "10:23" or  v.Text == "10:24" then 
-                    game:GetService("TeleportService"):Teleport(1730877806, game:GetService("Players").LocalPlayer)
-            task.wait(20)
-            stuck= false
-                end
-            end
-        end
-    end)
-    end
-end)
