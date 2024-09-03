@@ -30,7 +30,7 @@ local vipServers = {
 getgenv().code = vipServers[Player.Name]
 
 getgenv().rei = {
-    ["Key"] = "rei_a562f50d886966b7c72b574", -- Enter your key
+    ["Key"] = "rei_a562f50d886966b7c72b574b", -- Enter your key
     ["Method"] = "Impel", 
     
     ["PrivateCode"] = getgenv().code,
