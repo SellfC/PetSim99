@@ -4,7 +4,7 @@ getgenv().code = "SQlY2VzjTi"
 elseif Player.Name == "enturavang" then
 getgenv().code = "ODmcKl4ZQl" 
 elseif Player.Name == "corsetshc" then
-getgenv().code = "Q1u9b5O3M0" 
+getgenv().code = "EPn6eNn90g" 
 elseif Player.Name == "c2c1akdz" then
 getgenv().code = "HAY3bKUdQ6" 
 elseif Player.Name == "kindl4w" then
@@ -30,7 +30,7 @@ getgenv().code = "SQlY2VzjTi"
 elseif Player.Name == "ploios6s" then
 getgenv().code = "ODmcKl4ZQl" 
 elseif Player.Name == "blasmavich" then
-getgenv().code = "Q1u9b5O3M0" 
+getgenv().code = "EPn6eNn90g" 
 elseif Player.Name == "lewinno7u" then
 getgenv().code = "HAY3bKUdQ6" 
 elseif Player.Name == "unhellsvad" then
